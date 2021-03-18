@@ -6,15 +6,10 @@ int main()
 
     scanf("%d",&n);
 
-    int a[n],b[n];
-	for(i=0;i<n;i++)
-    {
-		scanf("%d",&a[i]);
-	}
-    for(i=0;i<n;i++)
-    {
-		scanf("%d",&a[i]);
-	}
+    char a[n],b[n];
+
+    scanf("%s",a);
+    scanf("%s",b);
 
     for ( i = 0; i < n; i++)
     {
