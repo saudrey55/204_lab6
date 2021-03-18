@@ -1,42 +1,29 @@
 #include<stdio.h>
 #include<string.h>
 
-void sort_words(char *words[], int a)
-{
-    char *x;
-
-    for (int i = 0; i<a; i++)
-    {
-        for (int j = i + 1; j<a; j++)
-        {
-            if ((char)(*words[i]) < (char)(*words[j]))
-            {
-                x = words[j];
-                words[j] = words[i];
-                words[i] = x;
-            }
-        }
-
-    }
-}
-
 int main()
 {
     int a,i,j,b;
 
     scanf("%d",&a);
 
-    char z[a][100];
+    char z[a][100],x[100];
 
     for ( i = 0; i < a; i++)
     {   
         scanf("%s",&z[i]);
     }
 
-    sort_words(z,a);
-    
+   for(i=0;i<=a;i++)
+      for(j=i+1;j<=a;j++){
+         if(strcmp(z[i],z[j])>0){
+            strcpy(x,z[i]);
+            strcpy(z[i],z[j]);
+            strcpy(z[j],x);
+         }
+      }
     for (int i = 0; i < a; i++)
     {
-        printf("%s ", z[i]);
+        printf("%s\n", z[i]);
     }
 }
