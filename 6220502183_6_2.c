@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 
 int main()
 {
@@ -23,9 +22,8 @@ int main()
         {
             d++;
         }
-        printf("%d %d\n",c,d);
     }
 
-    //printf("%d %d",c,d);
+    printf("%d %d",c,d);
     
 }
