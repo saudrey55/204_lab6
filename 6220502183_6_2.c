@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 int main()
 {
@@ -14,11 +15,11 @@ int main()
 
     for ( i = 0; i < n; i++)
     {
-        if (a[i] == b[i])
+        if (a[i]==b[i])
         {
             c++;
         }
-        else if (a[i] != b[i])
+        else 
         {
             d++;
         }

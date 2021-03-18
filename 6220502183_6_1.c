@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a,i,j;
+    int a,i,j,b;
 
     scanf("%d",&a);
 
@@ -16,7 +16,7 @@ int main()
     
     for ( i = 0; i < a; i++)
     {
-        if (strcmpi(z[i]<z[i+1]))
+        if (strcmpi(z[i],z[i+1]))
         { 
             printf("%s",z[i]);
         }
