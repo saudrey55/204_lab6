@@ -20,11 +20,10 @@ int main()
     {
         for ( j = 0; j < 2; j++)
         {
-            if (z[i][j]==)
+            if (z[i][j]==1)
             {
-                /* code */
+                
             }
-            
         }
     }
     
