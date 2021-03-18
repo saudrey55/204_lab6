@@ -14,7 +14,20 @@ int main()
         {
             scanf("%d",&z[i][j]);
         }
-        
     }
+
+     for ( i = 0; i < n ; i++)
+    {
+        for ( j = 0; j < 2; j++)
+        {
+            if (z[i][j]==)
+            {
+                /* code */
+            }
+            
+        }
+    }
+    
+    
     
 }

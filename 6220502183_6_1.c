@@ -15,7 +15,7 @@ int main()
     }
 
    for(i=0;i<=a;i++){
-      for(j=i+1;j<=a;j++){
+      for(j=i+1;j<a;j++){
          if(strcmp(z[i],z[j])>0)
          {
             strcpy(x,z[i]);
