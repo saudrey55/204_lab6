@@ -11,18 +11,20 @@ int main()
 
     for ( i = 0; i < a; i++)
     {   
-        scanf("%s",&z[i]);
+        scanf("%s",z[i]);
     }
 
-   for(i=0;i<=a;i++)
+   for(i=0;i<=a;i++){
       for(j=i+1;j<=a;j++){
-         if(strcmp(z[i],z[j])>0){
+         if(strcmp(z[i],z[j])>0)
+         {
             strcpy(x,z[i]);
             strcpy(z[i],z[j]);
             strcpy(z[j],x);
          }
-      }
-    for (int i = 0; i < a; i++)
+        }
+   }
+    for ( i = 0; i < a; i++)
     {
         printf("%s\n", z[i]);
     }
