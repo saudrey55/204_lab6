@@ -16,11 +16,21 @@ int main()
     
     for ( i = 0; i < a; i++)
     {
-        if (strcmpi(z[i],z[i+1]))
+        if (strcmpi(z[i],z[i+1])<0)
         { 
             printf("%s",z[i]);
         }
-        
+        else if (strcmpi(z[i],z[i+1])==0)
+        {
+            if (strcmpi(z[i],z[i+1])<0)
+            {
+                printf("%s",z[i]);
+            }  
+        }
+        else
+        {
+            continue;
+        }
     }
 
 }
