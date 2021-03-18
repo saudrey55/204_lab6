@@ -7,14 +7,18 @@ int main()
     scanf("%d",&n);
 
     int a[n],b[n];
-
-    scanf("%d",&a);
-
-    scanf("%d",&b);
+	for( i = 0; i <= n-1; i++)
+	{
+		scanf("%d",&a[i]);
+	}
+    for( i = 0; i <=n-1; i++)
+	{
+		scanf("%d",&b[i]);
+	}
 
     for ( i = 0; i < n; i++)
     {
-        if (a[i]==b[i])
+        if (b[i]==a[i])
         {
             c++;
         }
@@ -22,8 +26,8 @@ int main()
         {
             d++;
         }
+        
     }
-
-    printf("%d %d",c,d);
+printf("%d %d",c,d);
     
 }

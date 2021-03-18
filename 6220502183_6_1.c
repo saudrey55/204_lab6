@@ -7,30 +7,17 @@ int main()
 
     scanf("%d",&a);
 
-    char z[a];
+    char z[a][10];
 
     for ( i = 0; i < a; i++)
     {
+        for ( j = 0; i < 10; j++)
+        {
             scanf("%s",&z);
+        }
+        
+           
     }
     
-    for ( i = 0; i < a; i++)
-    {
-        if (strcmpi(z[i],z[i+1])<0)
-        { 
-            printf("%s",z[i]);
-        }
-        else if (strcmpi(z[i],z[i+1])==0)
-        {
-            if (strcmpi(z[i],z[i+1])<0)
-            {
-                printf("%s",z[i]);
-            }  
-        }
-        else
-        {
-            continue;
-        }
-    }
-
+   
 }
