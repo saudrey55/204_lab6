@@ -3,17 +3,20 @@
 
 int main()
 {
-    int a,i;
+    int a,i,j;
 
     scanf("%d",&a);
 
-    char z[a];
+    char z[a][50];
 
     for ( i = 0; i < a; i++)
     {
-        scanf("%c",&z[i]);
+        for (j = 0; j < 50; j++)
+        {
+            scanf("%s",&z[i][j]);
+        }
     }
     
-    
+
 
 }
